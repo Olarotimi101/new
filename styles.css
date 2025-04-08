@@ -1,0 +1,209 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1C1C1C; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #28A745;
+    transform: scale(1.05);
+    padding: 20px 20px;
+    color: white;
+    
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.home-content{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 10vh;
+    font-style: italic;    
+}
+
+
+.sec{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 10vh;
+    font-style: italic;        
+}
+.sec2{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 15vh;
+    font-style: italic;
+    font-size: small;      
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1C1C1C;
+    color: white;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007bff88;
+}
+
+#bmiResult, #calorieResult, #exerciseResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 50%; 
+    margin: 50px auto;
+    background: #2A2A2A; 
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+}
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #333;
+    color: white;
+    border: 2px solid #32CD32;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #00FF00;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+    outline: none;
+}
+
+/* Button - Smooth Animation */
+button {
+    padding: 12px;
+    width: 95%;
+    background-color: #32CD32;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #28A745;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+#bmiResult, #calorieResult, #recommendations {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Tablets (Landscape & Portrait) */
+@media (min-width: 600px) {
+    .container {
+        max-width: 500px;
+        padding: 30px;
+    }
+    
+    input {
+        padding: 12px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+/* Large Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%; 
+        padding: 15px;
+    }
+
+    input, button {
+        width: 85%;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 9px;
+    }
+}

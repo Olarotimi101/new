@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie & BMI Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CALORIE & BMI TRACKER</div>
+    </nav>
+    
+    <section class="home-content">
+        <h1>Welcome to Calorie & BMI Tracker</h1>
+    </section>
+
+    <section class="sec">
+        <h2>Track your daily calorie intake & BMI to stay healthy!</h2>
+    </section>
+
+    <section class="sec2">
+        <h3>Welcome to the Daily Calorie Tracker! Our goal is to help you monitor your daily calorie intake, track your BMI, and stay healthy. <br>
+            Get meal suggestions and improve your nutrition with our easy-to-use tool.</h3>
+    </section>
+
+    <div class="container">
+        <h1 style="font-size: medium;">Daily Calorie & BMI Tracker</h1>
+
+        <label for="weightInput">Enter your weight (kg)</label>
+        <input type="number" id="weightInput" placeholder="Enter weight">
+
+        <label for="heightInput">Enter your height (m)</label>
+        <input type="number" id="heightInput" placeholder="Enter height in meters">
+
+        <label for="caloriesInput">Enter your total calorie intake</label>
+        <input type="number" id="caloriesInput" placeholder="Enter calories">
+
+        <button onclick="calculateBMI()">Check BMI & Calories</button>
+
+        <div id="bmiResult"></div>
+        <div id="calorieResult"></div>
+        <div id="recommendations"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
